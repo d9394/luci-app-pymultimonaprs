@@ -68,6 +68,9 @@ alsa_device=s:option(Value, "device", translate("Alsa device index"))
 alsa_device.depends(source,"alsa")
 alsa_device.default="default"
 
+baacon_beacon=s:option(Flag, "beacon", translate("send beacon or not"))
+beacon_beacon.default=1
+
 beacon_lat=s:option(Value, "lat", translate("beacon lat"))
 beacon_lat.rmempty=false
 
